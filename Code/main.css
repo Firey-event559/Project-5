@@ -1,34 +1,28 @@
-.nav_bar_color {
-  background-color: blue;
+body{
+   margin: 0px;
+   padding: 0px;
+
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.search-container {
+nav.Navbar_color{
+  list-style-type: none;
+  margin: 0px;
+ 
+  overflow: hidden;
+  background-color: black;
   display: flex;
   align-items: center;
-  background-color: white;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.search-container input[type="text"] {
-  border: none;
-  outline: none;
-  padding: 0 10px;
-  width: 200px;
-}
-
-.nav a {
   color: white;
-  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
+
+ul{
+
+
+}
+
+
+
+
