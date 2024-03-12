@@ -13,7 +13,7 @@
     <nav class="Navbar_color">
         <ul>
             <li>
-                <img src="../Images/deBib_Nav_bar_logo.png" alt="logo" class="logo">
+                <a href="index.php"><img src="../Images/deBib_Nav_bar_logo.png" alt="logo" class="logo"></a>
             </li>
             <li class="searchbar">
                 <input type="search" placeholder="Search..">
