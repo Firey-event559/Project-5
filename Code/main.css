@@ -84,5 +84,38 @@ input.submit_account:hover{
 }
 
 
+.container {
+    margin-top: 70px;
+    margin-left: 600px;
+    align-items: center;
+    height: 560px;
+    width: 353px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
 
+input[type=text], input[type=password] {
+    border-radius: 3px;
+    border-style: none;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 15px;
+    width: 350px;
+    height: 45px;
+
+}
+button[type=submit] {
+    font-size: 17px;
+    font-family:'Kanit', sans-serif;
+    border-style: none;
+    color: white;
+    border-radius: 3px;
+    background-color: #BB271A;
+    align-content: center;
+    width: 354px;
+    height: 45px;
+    margin-top: 15px;
+    cursor: pointer;
+}
 
