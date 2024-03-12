@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,18 +7,20 @@
     <title>Navbar</title>
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
 
-<nav class="Navbar_color">
-    <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><input type="search" placeholder="Search.."></li>
-        
-    </ul>
-
-
-
-</nav>
+    <nav class="Navbar_color">
+        <ul>
+            <li>
+                <a href="index.php"><img src="Images/deBib_Nav_bar_logo.png"></a>
+            </li>
+            <li class="searchbar">
+                <input type="search" placeholder="Search..">
+            </li>
+        </ul>
+    </nav>
 
 </body>
+
 </html>

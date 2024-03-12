@@ -1,28 +1,33 @@
-body{
-   margin: 0px;
-   padding: 0px;
-
+body {
+  margin: 0px;
+  padding: 0px;
 }
 
-nav.Navbar_color{
-  list-style-type: none;
-  margin: 0px;
- 
-  overflow: hidden;
+.Navbar_color {
   background-color: black;
+}
+
+nav.Navbar_color ul {
   display: flex;
   align-items: center;
-  color: white;
-  font-size: 16px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+  justify-content: space-between;
 }
 
-ul{
-
-
+nav.Navbar_color ul li {
+  margin: 0;
+  padding: 0;
 }
 
+.searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
 
-
-
+.searchbar input[type="search"] {
+  width: 50%;
+  border: none;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
