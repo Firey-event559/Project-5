@@ -15,10 +15,10 @@
                 <a href="index.php"><img src="../Images/deBib_Nav_bar_logo.png" alt="logo" class="logo"></a>
             </li>
             <li>
-                <a href="account_registeren.php">Account Registratie</a>
+                <a class="nav_pagina_links" href="account_registeren.php">Account Registratie</a>
             </li>
             <li>
-                <a href="inloggen.php">Inloggen</a>
+                <a class="nav_pagina_links" href="inloggen.php">Inloggen</a>
             </li>
             <li class="searchbar">
                 <input type="search" placeholder="Search..">
