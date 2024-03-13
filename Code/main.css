@@ -29,8 +29,6 @@ nav.Navbar_color ul li {
   align-items: center;
   justify-content: center;
   width: 40%;
-  margin-left: 3em;
-  border-radius: 13px;
 }
 
 .searchbar input[type="search"] {
@@ -38,38 +36,35 @@ nav.Navbar_color ul li {
   border: none;
   padding: 0.5rem;
   font-size: 1rem;
-  margin-left: 3em;
 }
 
 .logo {
   width: 45px;
   height: 35px;
-  margin: auto;
 }
 
-form.createaccount {
+
+form.createaccount{
   color: white;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  margin-top: 20px;
+ flex-direction: column;
+ align-items: center;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+margin-top:20px ;
 }
 
-input.create_account_input {
-  background-color: black;
-  color: white;
-  padding: 12px;
-  width: 20%;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  margin-top: 20px;
+input.create_account_input{
+ background-color: white;
+ color: white;
+ padding: 12px;
+ width: 20%;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ margin-top: 20px;
 }
 
-h1.account {
-  font-size: 31px;
+h1.account{
+font-size: 31px;
 }
 
 input.submit_account {
@@ -123,11 +118,17 @@ button[type=submit] {
   border-style: none;
   color: white;
   border-radius: 3px;
+input.submit_account{
   background-color: #BB271A;
-  align-content: center;
-  width: 354px;
-  height: 45px;
-  margin-top: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-top: 20px;
+  width:22% ;
+  padding: 12px;
+}
+
+input.submit_account:hover{
   cursor: pointer;
 }
-*/
+
