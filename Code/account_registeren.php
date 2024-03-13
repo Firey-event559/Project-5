@@ -17,7 +17,6 @@
     <input class="create_account_input"  type="text" placeholder="Voornaam" required name="voornaam">
     <input class="create_account_input" type="text" placeholder="Achternaam" required name="achternaam">
     <input class="create_account_input" type="Email" placeholder="Email" required name="email" id="email">
-    
     <input class="create_account_input" type="password" placeholder="Wachtwoord" required name="wachtwoord">
     
 
