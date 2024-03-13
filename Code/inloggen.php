@@ -12,23 +12,13 @@
 <body>
 <?php include 'nav.php'; ?>
 
-<div class="container">
-    <form method="POST" action="">
-        <h1>Inloggen</h1>
-        <label for="user"><b>Gebruikersnaam</b></label>
-        <input type="text" placeholder="gebruikersnaam" id="user" name="username" required>
+<form class="createaccount" onsubmit=" return validateEmail()" method="post">
+    <h1 class="account">Inloggen</h1>
+    <input class="create_account_input" type="Email" placeholder="Email" required name="email" id="email">
+    <div id="emailError" class="error"></div>
+    <input class="create_account_input" type="password" placeholder="Wachtwoord" required name="wachtwoord">
 
-        <label for="password"><b>Wachtwoord</b></label>
-        <input type="password" placeholder="Wachtwoord" id="password" name="password" required>
 
-        <button type="submit">Inloggen</button>
-
-        <div class="options">
-            <a href="#">Wachtwoord vergeten?</a>  <a href="#">Hier registreren</a>
-        </div>
-
-    </form>
-</div>
-
+    <input class="submit_account" type="submit" value="Inloggen">
 </body>
 </html>
