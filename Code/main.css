@@ -90,45 +90,4 @@ input.submit_account:hover {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-/* 
-.container {
-  margin-top: 70px;
-  margin-left: 600px;
-  align-items: center;
-  height: 560px;
-  width: 353px;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  font-family: 'Kanit', sans-serif;
-}
-
-input[type=text], input[type=password] {
-  border-radius: 3px;
-  border-style: none;
-  font-family: 'Kanit', sans-serif;
-  margin-top: 15px;
-  width: 350px;
-  height: 45px;
-
-}
-button[type=submit] {
-  font-size: 17px;
-  font-family:'Kanit', sans-serif;
-  border-style: none;
-  color: white;
-  border-radius: 3px;
-input.submit_account{
-  background-color: #BB271A;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: #ffffff;
-  border-radius: 20px;
-  margin-top: 20px;
-  width:22% ;
-  padding: 12px;
-}
-
-input.submit_account:hover{
-  cursor: pointer;
-}
 
