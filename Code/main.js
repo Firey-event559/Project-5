@@ -1,34 +1,30 @@
 function validateEmail() {
-<<<<<<< Updated upstream
-    var emailInput = document.getElementById('email');
-    var emailError = document.getElementById('emailError');
-    var allowedDomains = ['student.zadkine.nl', 'tcr.mbo.nl'];
-=======
   var emailInput = document.getElementById("email");
-  var emailError = alert("Gebruik een geldig emailadres met het domein @student.zadkine.nl of @tcr.mbo.nl.");
+  var emailError = document.getElementById("emailError");
   var allowedDomains = ["student.zadkine.nl", "tcr.mbo.nl"];
->>>>>>> Stashed changes
+  var emailInput = document.getElementById("email");
+  var emailError = alert(
+    "Gebruik een geldig emailadres met het domein @student.zadkine.nl of @tcr.mbo.nl."
+  );
+  var allowedDomains = ["student.zadkine.nl", "tcr.mbo.nl"];
 
-    var email = emailInput.value.trim().toLowerCase();
-    var domain = email.split('@')[1];
+  var email = emailInput.value.trim().toLowerCase();
+  var domain = email.split("@")[1];
 
-<<<<<<< Updated upstream
-    if (allowedDomains.indexOf(domain) === -1) {
-        emailError.innerHTML = 'Gebruik een geldig emailadres met het domein @student.zadkine.nl of @tcr.mbo.nl.';
-        return false;
-    } else {
-        emailError.innerHTML = '';
-        return true;
-
-    }
-=======
   if (allowedDomains.indexOf(domain) === -1) {
-    emailError =
-     alert("Gebruik een geldig emailadres met het domein @student.zadkine.nl of @tcr.mbo.nl.");
+    emailError.innerHTML =
+      "Gebruik een geldig emailadres met het domein @student.zadkine.nl of @tcr.mbo.nl.";
     return false;
   } else {
-    
+    emailError.innerHTML = "";
     return true;
   }
->>>>>>> Stashed changes
+  if (allowedDomains.indexOf(domain) === -1) {
+    emailError = alert(
+      "Gebruik een geldig emailadres met het domein @student.zadkine.nl of @tcr.mbo.nl."
+    );
+    return false;
+  } else {
+    return true;
+  }
 }
