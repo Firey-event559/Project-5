@@ -70,7 +70,6 @@ font-size: 31px;
 input.submit_account{
   background-color: black;
   background-color: white;
- 
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: black;
   border-radius: 50px;
@@ -82,41 +81,41 @@ input.submit_account{
 input.submit_account:hover{
   cursor: pointer;
 }
-
-
+ /* 
 .container {
-    margin-top: 70px;
-    margin-left: 600px;
-    align-items: center;
-    height: 560px;
-    width: 353px;
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-family: 'Kanit', sans-serif;
+  margin-top: 70px;
+  margin-left: 600px;
+  align-items: center;
+  height: 560px;
+  width: 353px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: 'Kanit', sans-serif;
 }
 
 input[type=text], input[type=password] {
-    border-radius: 3px;
-    border-style: none;
-    font-family: 'Kanit', sans-serif;
-    margin-top: 15px;
-    width: 350px;
-    height: 45px;
+  border-radius: 3px;
+  border-style: none;
+  font-family: 'Kanit', sans-serif;
+  margin-top: 15px;
+  width: 350px;
+  height: 45px;
 
 }
 button[type=submit] {
-    font-size: 17px;
-    font-family:'Kanit', sans-serif;
-    border-style: none;
-    color: white;
-    border-radius: 3px;
-    background-color: #BB271A;
-    align-content: center;
-    width: 354px;
-    height: 45px;
-    margin-top: 15px;
-    cursor: pointer;
+  font-size: 17px;
+  font-family:'Kanit', sans-serif;
+  border-style: none;
+  color: white;
+  border-radius: 3px;
+  background-color: #BB271A;
+  align-content: center;
+  width: 354px;
+  height: 45px;
+  margin-top: 15px;
+  cursor: pointer;
 }
+*/
 
 
