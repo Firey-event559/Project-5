@@ -14,7 +14,7 @@
 
     <form class="createaccount" onsubmit=" return validateEmail()" method="post">
         <h1 class="account">Inloggen</h1>
-        <input class="create_account_input" type="Email" placeholder="Email" required name="email" id="email">
+        <input class="create_account_input" type="email" placeholder="Email" required name="email" id="email">
         <input class="create_account_input" type="password" placeholder="Wachtwoord" required name="wachtwoord">
         <input class="submit_account" type="submit" value="Login">
     </form>
