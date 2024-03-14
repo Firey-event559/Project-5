@@ -9,10 +9,16 @@
 </head>
 
 <body>
-      <nav class="Navbar_color">
+    <nav class="Navbar_color">
         <ul>
             <li>
                 <a href="index.php"><img src="../Images/deBib_Nav_bar_logo.png" alt="logo" class="logo"></a>
+            </li>
+            <li>
+                <a class="nav_pagina_links" href="account_registeren.php">registreren</a>
+            </li>
+            <li>
+                <a class="nav_pagina_links" href="inloggen.php">Inloggen</a>
             </li>
             <li class="searchbar">
                 <input type="search" placeholder="Search..">
