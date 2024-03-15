@@ -10,9 +10,17 @@
     <title>Document</title>
 </head>
 <body>
-<?php include 'nav.php'; ?>
+<?php 
 
-    <form class="createaccount" onsubmit=" return validateEmail()" method="post">
+require_once 'db.php';
+
+include 'nav.php'; 
+
+
+
+?>
+
+    <form class="createaccount" onsubmit=" return validateEmail()" method="post" action="">
         <h1 class="account">Inloggen</h1>
         <input class="create_account_input" type="email" placeholder="Email" required name="email" id="email">
         <input class="create_account_input" type="password" placeholder="Wachtwoord" required name="wachtwoord">
