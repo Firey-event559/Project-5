@@ -10,18 +10,26 @@
 
 require_once 'db.php';
 
-class Insert_data{
+
+if(isset($_POST['submit'])){
+    $first_name = strip_tags($_POST['first_name']);
+    $last_name = strip_tags($_POST['last_name']);
+    $email = strip_tags($_POST['email']);
+    $password = password_hash($_POST['password1'], PASSWORD_DEFAULT);
+
+}
+
+class Insert_data_account{
 
     public function insert($first_name, $last_name, $email, $password){
-        $db = new Database_connect();
-        $conn = $db->Dbconnection();
+   
 
-        $sql = "INSERT INTO account (first_name, last_name, email, password) VALUES (:first_name, :last_name, :email, :password)";
-        $stmt = $conn->prepare($sql);
+        $db = "INSERT INTO account (first_name, last_name, email, password1) VALUES (:first_name, :last_name, :email, :password1)";
+        $stmt = $db->prepare();
         $stmt->bindParam(':first_name', $first_name);
         $stmt->bindParam(':last_name', $last_name);
         $stmt->bindParam(':email', $email);
-        $stmt->bindParam(':password', $password);
+        $stmt->bindParam(':password1', $password);
 
         $stmt->execute();
     }
@@ -32,7 +40,9 @@ class Insert_data{
 
 }
 
-$insert = new insert_data();
+$insert = new insert_data_account();
+$insert->insert($first_name, $last_name, $email, $password);
+
 
 
 ?>
