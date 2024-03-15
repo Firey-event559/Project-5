@@ -6,7 +6,7 @@ body {
 
 nav {
   margin: 0;
-  padding: 2.5px;
+  padding: 4px;
 }
 
 .Navbar_color {
@@ -16,7 +16,7 @@ nav {
 nav.Navbar_color ul {
   display: flex;
   align-items: center;
-  justify-content: space-between;;
+  justify-content: space-between 14px;
 }
 
 nav.Navbar_color ul li {
@@ -28,7 +28,7 @@ nav.Navbar_color ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40%;
+  width: 60%;
 }
 
 .searchbar input[type="search"] {
@@ -36,35 +36,55 @@ nav.Navbar_color ul li {
   border: none;
   padding: 0.5rem;
   font-size: 1rem;
+  margin-right: 12px;
 }
 
 .logo {
   width: 45px;
   height: 35px;
 }
+.nav_pagina_links {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding-left: 14px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.nav_pagina_links-inloggen {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  padding-right: 10px;
+  padding-left: 35px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/*NAV CSS END */
 
-
-form.createaccount{
+form.createaccount {
   color: white;
   display: flex;
   justify-content: center;
- flex-direction: column;
- align-items: center;
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-margin-top:20px ;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 20px;
 }
 
-input.create_account_input{
- background-color: black;
- color: white;
- padding: 12px;
- width: 20%;
- font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
- margin-top: 20px;
+input.create_account_input {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  width: 20%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 20px;
 }
 
-h1.account{
-font-size: 31px;
+h1.account {
+  font-size: 31px;
 }
 
 input.submit_account {
@@ -82,12 +102,3 @@ input.submit_account {
 input.submit_account:hover {
   cursor: pointer;
 }
-
-.nav_pagina_links {
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
