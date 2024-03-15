@@ -21,7 +21,7 @@
                 <a class="nav_pagina_links-inloggen" href="inloggen.php">Inloggen</a>
             </li>
             <li>
-                <a class="nav_pagina_links" href="account_registeren.php">registreren</a>
+                <a class="nav_pagina_links" href="account_registeren.php">Registreren</a>
             </li>
 
 
