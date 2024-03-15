@@ -8,14 +8,17 @@
     <body>
         <?php
      require "db.php";
+     if(isset($_POST['submit'])){
+        $email = strip_tags($_POST['email']);
+        $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+    
+    }
 
-     public function select_account() {
+     class select_data_account {
 
-        $db = new Database_connect();
-        $conn = $db->Dbconnection();
+        public function select_account(){
 
-        $select 
-
+        }
      }
 
      ?>
