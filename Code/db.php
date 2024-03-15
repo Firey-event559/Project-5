@@ -21,6 +21,7 @@ class Database_connect{
             echo "Connection error: " . $exception->getMessage();
         }
 
+
         return $this->conn;
     }
 
