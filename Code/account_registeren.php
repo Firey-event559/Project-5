@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-        require_once 'db.php';
+        require 'db.php';
         
 
     include 'nav.php';

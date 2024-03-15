@@ -39,7 +39,10 @@ class Insert_data_account{
         
     }
 
-}
+} 
+
+
+
 
 $account = new Insert_data_account();
 $account->insert($first_name, $last_name, $email, $password);
