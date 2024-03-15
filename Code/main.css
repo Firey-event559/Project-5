@@ -16,7 +16,7 @@ nav {
 nav.Navbar_color ul {
   display: flex;
   align-items: center;
-  justify-content: space-between 14px;
+  justify-content: space-between;
 }
 
 nav.Navbar_color ul li {
@@ -42,7 +42,7 @@ nav.Navbar_color ul li {
 .logo {
   width: 45px;
   height: 35px;
-  margin-right: 14.9em;
+  margin-right: 14em;
 }
 .nav_pagina_links {
   text-decoration: none;
