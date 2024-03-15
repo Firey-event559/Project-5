@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+
+
     <title>Document</title>
 </head>
+
 <body>
-<?php 
+    <?php 
 
 require_once 'db.php';
 
@@ -27,6 +31,7 @@ include 'nav.php';
         <input class="submit_account" type="submit" value="Login">
     </form>
 
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>

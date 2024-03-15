@@ -28,11 +28,11 @@ nav.Navbar_color ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 35%;
 }
 
 .searchbar input[type="search"] {
-  width: 50%;
+  width: 35%;
   border: none;
   padding: 0.5rem;
   font-size: 1rem;
@@ -42,7 +42,6 @@ nav.Navbar_color ul li {
 .logo {
   width: 45px;
   height: 35px;
-  margin-right: 14em;
 }
 .nav_pagina_links {
   text-decoration: none;
@@ -54,10 +53,12 @@ nav.Navbar_color ul li {
 }
 .nav_pagina_links-inloggen {
   text-decoration: none;
+  display: flex;
+  text-align: center;
+  gap: 10px;
   color: white;
   font-size: 15px;
-  padding-right: 10px;
-  padding-left: 35px;
+
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }

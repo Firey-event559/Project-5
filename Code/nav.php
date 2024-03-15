@@ -18,10 +18,16 @@
                 <input type="search" placeholder="Search..">
             </li>
             <li>
-                <a class="nav_pagina_links-inloggen" href="inloggen.php">Inloggen</a>
+                <a class="nav_pagina_links-inloggen" href="inloggen.php">Log in</a>
             </li>
             <li>
-                <a class="nav_pagina_links" href="account_registeren.php">Registreren</a>
+                <a class="nav_pagina_links" href="account_registeren.php">Regiister</a>
+            </li>
+            <li>
+                <a class="nav_pagina_links" href="boek_reserveren.php">Reserve a book</a>
+            </li>
+            <li>
+                <a class="nav_pagina_links" href="boeken.php">Books</a>
             </li>
 
 
