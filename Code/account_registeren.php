@@ -9,6 +9,7 @@
 <body>
     <?php
         require_once 'db.php';
+        
 
     include 'nav.php';
 
@@ -18,11 +19,13 @@
     <input class="create_account_input"  type="text" placeholder="Voornaam" required name="first_name">
     <input class="create_account_input" type="text" placeholder="Achternaam" required name="last name">
     <input class="create_account_input" type="Email" placeholder="Email" required name="email" id="email">
-    <input class="create_account_input" type="password" placeholder="Wachtwoord" required name="password1">
+    <input class="create_account_input" type="password" placeholder="Wachtwoord" required name="password">
     
     <input class="submit_account" type="submit" value="Account aanmaken" name="submit">
     
 </form>
+
+
 
 
 

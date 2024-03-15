@@ -10,38 +10,44 @@
 
 require_once 'db.php';
 
-
 if(isset($_POST['submit'])){
     $first_name = strip_tags($_POST['first_name']);
     $last_name = strip_tags($_POST['last_name']);
     $email = strip_tags($_POST['email']);
-    $password = password_hash($_POST['password1'], PASSWORD_DEFAULT);
+    $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
 }
 
 class Insert_data_account{
 
     public function insert($first_name, $last_name, $email, $password){
-   
 
-        $db = "INSERT INTO account (first_name, last_name, email, password1) VALUES (:first_name, :last_name, :email, :password1)";
-        $stmt = $db->prepare();
-        $stmt->bindParam(':first_name', $first_name);
-        $stmt->bindParam(':last_name', $last_name);
+        $db = new Database_connect();
+        $conn = $db->Dbconnection();
+
+        $sql = "INSERT INTO account (voornaam, achternaam, email, wachtwoord) VALUES (:voornaam, :achternaam, :email, :password)";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(':voornaam', $first_name);
+        $stmt->bindParam(':achternaam', $last_name);
         $stmt->bindParam(':email', $email);
-        $stmt->bindParam(':password1', $password);
-
+        $stmt->bindParam(':password', $password);
         $stmt->execute();
+
+      
+
+
+        
     }
-
-
-    
-
 
 }
 
-$insert = new insert_data_account();
-$insert->insert($first_name, $last_name, $email, $password);
+$account = new Insert_data_account();
+$account->insert($first_name, $last_name, $email, $password);
+
+
+header('Location: inloggen.php');
+
+
 
 
 
