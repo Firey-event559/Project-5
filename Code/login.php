@@ -14,16 +14,19 @@
 
 require_once 'db.php';
 
-include 'nav.php'; 
+include 'nav.php';
+
 
 
 
 ?>
 
-    <form class="createaccount" onsubmit=" return validateEmail()" method="post" action="select.php">
+    <form class="createaccount" onsubmit=" return validateEmail()" method="post" action="select_account.php">
         <h1 class="account">Inloggen</h1>
         <input class="create_account_input" type="email" placeholder="Email" required name="email" id="email">
+        <div name=""></div>
         <input class="create_account_input" type="password" placeholder="Wachtwoord" required name="wachtwoord">
+        <div id="WachtwoordError"></div>
         <input class="submit_account" type="submit" value="Login" name="submit">
     </form>
 

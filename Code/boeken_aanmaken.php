@@ -8,20 +8,11 @@
 </head>
 <body>
     <?php
-    require_once 'db.php';
-   include 'nav.php';
-
-
-include 'session_function.php';
-
-
-
-
+    session_start();
+      
+      
 
     ?>
-
-
-
     
 </body>
 </html>

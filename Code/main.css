@@ -104,3 +104,12 @@ input.submit_account {
 input.submit_account:hover {
   cursor: pointer;
 }
+div.session{
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+   display: flex;
+  justify-content: center;
+  margin-top:10px ;
+ 
+}

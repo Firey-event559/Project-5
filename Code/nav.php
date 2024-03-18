@@ -18,7 +18,7 @@
                 <input type="search" placeholder="Search..">
             </li>
             <li>
-                <a class="nav_pagina_links-inloggen" href="inloggen.php">Inloggen</a>
+                <a class="nav_pagina_links-inloggen" href="login.php">Inloggen</a>
             </li>
             <li>
                 <a class="nav_pagina_links" href="account_registeren.php">Registeren</a>
