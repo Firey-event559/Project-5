@@ -12,10 +12,15 @@
 
     <?php
 
-
-
-
 require_once 'db.php';
+
+session_start();
+if(isset($_SESSION['email'])){
+        
+    echo "<div class='session'>Ingelogd als " . $_SESSION['email'] . "</div>";
+
+}
+
 
 
 
@@ -70,12 +75,6 @@ if(isset($_POST['submit'])){
 
 }
 
-session_start();
-if(isset($_SESSION['email'])){
-        
-    echo "<div class='session'>Ingelogd als " . $_SESSION['email'] . "</div>";
-
-}
 
 header("Location: boeken.php");
 exit();
