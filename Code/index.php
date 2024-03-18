@@ -16,12 +16,14 @@ session_start();
 </head>
 
 <body>
-    <?php include 'nav.php'; ?>
+    <?php include 'nav.php';
+    include 'footer.php';
+    ?>
 </body>
 
 </html>
 
-<?php 
+<?php
 
 session_destroy();
 

@@ -28,11 +28,11 @@ nav.Navbar_color ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35%;
+  width: 50%;
 }
 
 .searchbar input[type="search"] {
-  width: 35%;
+  width: 50%;
   border: none;
   padding: 0.5rem;
   font-size: 1rem;
@@ -46,8 +46,7 @@ nav.Navbar_color ul li {
 .nav_pagina_links {
   text-decoration: none;
   color: white;
-  font-size: 15px;
-
+  font-size: 17px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -55,10 +54,20 @@ nav.Navbar_color ul li {
   text-decoration: none;
   display: flex;
   text-align: center;
-  gap: 10px;
   color: white;
-  font-size: 15px;
+  font-size: 17px;
+  padding-left: 7em;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
 
+.nav_pagina_links-registreren {
+  text-decoration: none;
+  display: flex;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  padding-right: 3em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -104,12 +113,39 @@ input.submit_account {
 input.submit_account:hover {
   cursor: pointer;
 }
-div.session{
+div.session {
   color: white;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-   display: flex;
+  display: flex;
   justify-content: center;
-  margin-top:10px ;
- 
+  margin-top: 10px;
+}
+/* FOOTER */
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.tcrimg {
+  width: 90px;
+  height: 70px;
+}
+.copyright {
+  text-decoration: none;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 17px;
+}
+.footer-names {
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 17px;
 }

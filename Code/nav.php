@@ -14,6 +14,14 @@
             <li>
                 <a href="index.php"><img src="../Images/deBib_Nav_bar_logo.png" alt="logo" class="logo"></a>
             </li>
+
+
+            <li>
+                <a class="nav_pagina_links" href="boeken_aanmaken.php">Reserveer Een Boek</a>
+            </li>
+            <li>
+                <a class="nav_pagina_links" href="boeken.php">Boeken</a>
+            </li>
             <li class="searchbar">
                 <input type="search" placeholder="Search..">
             </li>
@@ -21,14 +29,9 @@
                 <a class="nav_pagina_links-inloggen" href="login.php">Inloggen</a>
             </li>
             <li>
-                <a class="nav_pagina_links" href="account_registeren.php">Registeren</a>
+                <a class="nav_pagina_links-registreren" href="account_registeren.php">Registeren</a>
             </li>
-            <li>
-                <a class="nav_pagina_links" href="boek_reserveren.php">Reserveer Een Boek</a>
-            </li>
-            <li>
-                <a class="nav_pagina_links" href="boeken.php">Boeken</a>
-            </li>
+
 
 
         </ul>

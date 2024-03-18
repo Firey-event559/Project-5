@@ -15,8 +15,9 @@
             <a class="imglink" href="https://www.techniekcollegerotterdam.nl/">
                 <img class="tcrimg" src="../Images/tcr-logo.png">
             </a>
-            <a class="copyright" href="https://www.charlotteslaw.nl/auteursrecht-copyright/">Privacy en Copyright</a>
         </p>
+        <a class="copyright" href="https://www.charlotteslaw.nl/auteursrecht-copyright/">Privacy en Copyright</a>
+
         <p class="footer-names">Gemaakt door, Ramino, Aaron en Vasco.</p>
     </footer>
 
