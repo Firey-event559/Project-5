@@ -17,7 +17,7 @@
 
 
             <li>
-                <a class="nav_pagina_links" href="boeken_create.php">Reserveer Een Boek</a>
+                <a class="nav_pagina_links" href="create.php">Reserveer Een Boek</a>
             </li>
             <li>
                 <a class="nav_pagina_links" href="boeken.php">Boeken</a>
