@@ -12,9 +12,10 @@
     <?php
     require_once 'db.php';
    include 'nav.php';
+   include 'session_function.php';  
    include 'footer.php';
 
-include 'session_function.php';
+
 
 
 

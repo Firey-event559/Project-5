@@ -9,32 +9,22 @@
 </head>
 
 <body>
-
-    <?php
-
+<?php
 require_once 'db.php';
 
 session_start();
-if(isset($_SESSION['email'])){
-        
-    echo "<div class='session'>Ingelogd als " . $_SESSION['email'] . "</div>";
 
-}
-
-
-
-
-class Select_data_account{
-
+class Select_data_account {
     private $email;
     private $wachtwoord;
     private $conn;
+    public $loginSuccess;
 
     function __construct($email, $wachtwoord){
         $this->email = $email;
         $this->wachtwoord = $wachtwoord;
         $this->conn = (new Database_connect())->Connect_database();
-        
+        $this->loginSuccess = false; 
     }
 
     public function Select(){
@@ -51,17 +41,12 @@ class Select_data_account{
                 $_SESSION['voornaam'] = $row['voornaam'];
                 $_SESSION['achternaam'] = $row['achternaam'];
                 $_SESSION['id'] = $row['id'];
-            
-            }else{
+                $this->loginSuccess = true; 
+            } else {
                 echo "Wachtwoord is onjuist";
-                
-              
             }
-        }else{  
-           echo "email is onjuist";
-           
-            
-            
+        } else {
+           echo "Email is onjuist";
         }
     }
 }
@@ -73,15 +58,14 @@ if(isset($_POST['submit'])){
     $select = new Select_data_account($email, $wachtwoord);
     $select->Select();
 
+    
+    if ($select->loginSuccess) {
+        header("Location: boeken.php");
+        exit();
+    }
+   
 }
-
-
-header("Location: boeken.php");
-exit();
-
-
 
 ?>
 </body>
-
 </html>
