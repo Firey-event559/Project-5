@@ -7,23 +7,26 @@
     <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
-
 <body>
 <?php
 require_once 'db.php';
 
 session_start();
 
+
+
 class Select_data_account {
     private $email;
     private $wachtwoord;
     private $conn;
+    private $db;
     public $loginSuccess;
 
-    function __construct($email, $wachtwoord){
+   public function __construct($email, $wachtwoord){
         $this->email = $email;
         $this->wachtwoord = $wachtwoord;
-        $this->conn = (new Database_connect())->Connect_database();
+        $this->db = new Database_connect();
+        $this->conn = $this->db->Connect();
         $this->loginSuccess = false; 
     }
 
@@ -44,10 +47,12 @@ class Select_data_account {
                 $this->loginSuccess = true; 
             } else {
                 echo "Wachtwoord is onjuist";
+                
             }
         } else {
-           echo "Email is onjuist";
-        }
+            
+      echo "Email is onjuist";
+        } 
     }
 }
 
@@ -58,14 +63,14 @@ if(isset($_POST['submit'])){
     $select = new Select_data_account($email, $wachtwoord);
     $select->Select();
 
-    
     if ($select->loginSuccess) {
         header("Location: boeken.php");
         exit();
     }
-   
 }
 
+
 ?>
+
 </body>
 </html>

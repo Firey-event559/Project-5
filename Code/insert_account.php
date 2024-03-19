@@ -13,12 +13,12 @@ class Insert_data_account{
     private $password;
     private $conn;
 
-    function __construct($first_name, $last_name, $email, $password){
+   public function __construct($first_name, $last_name, $email, $password){
         $this->first_name = $first_name;
         $this->last_name = $last_name;
         $this->email = $email;
         $this->password = $password;
-        $this->conn =(new Database_connect())->Connect_database();
+        $this->conn = (new Database_connect())->Connect();
 
     }
 
