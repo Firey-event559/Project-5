@@ -8,23 +8,44 @@
 </head>
 <body>
 <?php
-function checkSession(){
+
+class checkSession{
+
+    protected $session;
+
+    protected $header;
+
+
+  function __construct($session,$header){
+
+    $this->session = $session;
+    $this->header = $header;
+
+
+
+
+  }
     
-    session_start();
-
-    if(isset($_SESSION['email'])){
-        echo "<div class='session'>Ingelogd als " . $_SESSION['email'] . "</div>";
-    } else {
-        header('Location: login.php');
-        
-        
-        
-        exit();
-    }
 }
+        
+
+//function checkSession(){
+    
+   // session_start();
+
+   // if(isset($_SESSION['email'])){
+       // echo "<div class='session'>Ingelogd als " . $_SESSION['email'] . "</div>";
+   // } else {
+     //   header('Location: login.php');
+        
+        
+        
+        //exit();
+  //  }
+//}
 
 
-$session = checkSession();
+//$session = checkSession()
 
  
 
