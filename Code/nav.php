@@ -17,7 +17,7 @@
 
 
             <li>
-                <a class="nav_pagina_links" href="boeken_aanmaken.php">Reserveer Een Boek</a>
+                <a class="nav_pagina_links" href="boeken_create.php">Reserveer Een Boek</a>
             </li>
             <li>
                 <a class="nav_pagina_links" href="boeken.php">Boeken</a>
@@ -29,7 +29,7 @@
                 <a class="nav_pagina_links-inloggen" href="login.php">Inloggen</a>
             </li>
             <li>
-                <a class="nav_pagina_links-registreren" href="account_registeren.php">Registeren</a>
+                <a class="nav_pagina_links-registreren" href="account_register.php">Registeren</a>
             </li>
 
 

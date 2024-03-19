@@ -19,33 +19,35 @@ class checkSession{
   function __construct($session,$header){
 
     $this->session = $session;
-    $this->header = $header;
+    
 
 
+ function checkSession($session,$header){
 
+    session_start();
+
+    if(isset($_SESSION[$session])){
+
+        echo "<div class='session'>Ingelogd als " . $_SESSION[$session] . "</div>";
+
+    }else{
+            
+            header("Location: boeken.php" . $header);
+            exit();
+
+    
 
   }
     
 }
+  }
+
+}
+
+$session = (new checkSession())->checkSession();
+
         
 
-//function checkSession(){
-    
-   // session_start();
-
-   // if(isset($_SESSION['email'])){
-       // echo "<div class='session'>Ingelogd als " . $_SESSION['email'] . "</div>";
-   // } else {
-     //   header('Location: login.php');
-        
-        
-        
-        //exit();
-  //  }
-//}
-
-
-//$session = checkSession()
 
  
 
