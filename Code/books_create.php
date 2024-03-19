@@ -5,44 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+    <?php 
+
+require_once 'db.php';
+include 'nav.php';
+?>
+
+    <form class="create_book" method="post" action="insert_books.php">
+        <h1 class="account">Nieuw boek toevoegen</h1>
+        <input class="create_account_input" enctype="multipart/form-data"  placeholder="titel" required name="title" id="title">
+        <div name=""></div>
+        <input class="create_book_input" type="text" placeholder="isbn" required name="isbn">
+        <input class="create_book_input" type="text" placeholder="schrijver" required name="writer">
+        <input class="create_book_input" type="text" placeholder="uitgever" required name="publisher">
+        <input class="create_book_input" type="text" placeholder="boekjaar" required name="release_year">
+        <textarea class="create_book_input" cols="30" rows="10"placeholder="Samenvatting" required name="book_information"></textarea>
+        <input class="create_book_input_img" type="file" placeholder="afbeelding" required name="image">
+    
+    
+          <input class="submit_book" type="submit" value="toevoegen" name="submit">
+    </form>
+
     <?php
-    session_start();
-    include 'footer.php';
-    include 'nav.php';
-
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $title = $_POST['Titel'];
-        $isbn = $_POST['isbn'];
-        $writer = $_POST['schrijver'];
-        $publisher = $_POST['uitgever'];
-        $release_year = $_POST['Boekjaar'];
-        $book_information = $_POST['informatie_boek'];
-    
-        $sql = "INSERT INTO boeken (Titel, isbn, schrijver, uitgever, Boekjaar, informatie_boek) VALUES (:Titel, :isbn, :schrijver, :uitgever, :Boekjaar, :informatie_boek)";
-        $stmt = $conn->prepare($sql);
-        $stmt->bindParam(":Titel", $title, PDO::PARAM_VAR);
-        $stmt->bindParam(":isbn", $isbn, PDO::PARAM_VAR);
-        $stmt->bindParam(":schrijver", $writer, PDO::PARAM_VAR);
-        $stmt->bindParam(":uitgever", $brand, PDO::PARAM_VAR);
-        $stmt->bindParam(":Boekjaar", $release_year, PDO::PARAM_VAR);
-        $stmt->bindParam(":informatie_boek", $book_information, PDO::PARAM_VAR);
-    
-        if ($stmt->execute()) {
-    
-            header("Location:#");
-            exit();
-        } else {
-            echo "Error: Er is iets misgegaan bij het toevoegen van een nieuw boek.";
-        }
-    }
-    $conn = null;
-
+         include 'footer.php';
     ?>
 
+    <script src="main.js"></script>
 </body>
 
 </html>

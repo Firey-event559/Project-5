@@ -19,14 +19,12 @@ class Select_data_account {
     private $email;
     private $wachtwoord;
     private $conn;
-    private $db;
     public $loginSuccess;
 
    public function __construct($email, $wachtwoord){
         $this->email = $email;
         $this->wachtwoord = $wachtwoord;
-        $this->db = new Database_connect();
-        $this->conn = $this->db->Connect();
+        $this->conn = (new Database_connect())->Connect();
         $this->loginSuccess = false; 
     }
 

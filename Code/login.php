@@ -17,7 +17,6 @@
  session_start();
 
 require_once 'db.php';
-include 'footer.php';
 include 'nav.php';
 
 
@@ -32,7 +31,11 @@ include 'nav.php';
         <input class="submit_account" type="submit" value="Login" name="submit">
     </form>
 
+   
+   <?php include 'footer.php'; ?>
+   
     <script src="main.js"></script>
-</body>
 
+  
+</body>
 </html>

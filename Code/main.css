@@ -141,6 +141,21 @@ input.create_book_input {
     "Lucida Sans", Arial, sans-serif;
   margin-top: 20px;
 }
+input.create_book_input_img{
+  color: white;
+  margin-top:20px ;
+
+
+}
+textarea.create_book_input {
+  background-color: black;
+  color: white;
+  padding: 12px;
+  width: 20%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 20px;
+}
 
 input.submit_book {
   background-color: black;
@@ -150,14 +165,19 @@ input.submit_book {
   color: black;
   border-radius: 50px;
   margin-top: 20px;
+  
   width: 20%;
   padding: 12px;
 }
 
+input.submit_book:hover {
+  cursor: pointer;
+}
+
+
 /* FOOTER */
 
 .footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;

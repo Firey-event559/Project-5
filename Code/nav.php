@@ -20,8 +20,9 @@
                 <a class="nav_pagina_links" href="create.php">Reserveer Een Boek</a>
             </li>
             <li>
-                <a class="nav_pagina_links" href="boeken.php">Boeken</a>
+                <a class="nav_pagina_links" href="books.php">Boeken</a>
             </li>
+            
             <li class="searchbar">
                 <input type="search" placeholder="Search..">
             </li>

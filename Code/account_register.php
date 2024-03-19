@@ -12,7 +12,6 @@
     <?php
     require 'db.php';
 
-    include 'footer.php';
     include 'nav.php';
 
     ?>
@@ -30,7 +29,7 @@
 
 
 
-
+<?php include 'footer.php'; ?>
     <script src="main.js"></script>
 
 </body>

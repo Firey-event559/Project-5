@@ -7,6 +7,10 @@ class Database_connect{
     private $password = "";
     private $conn;
 
+    public function __construct(){
+        $this->conn = null;
+    }
+
 
  public function Connect(){
        try{
