@@ -147,7 +147,7 @@ input.create_book_input_img{
 
 
 }
-textarea.create_book_input {
+textarea.create_book_input{
   background-color: black;
   color: white;
   padding: 12px;
@@ -155,6 +155,8 @@ textarea.create_book_input {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   margin-top: 20px;
+  height: 175px;
+
 }
 
 input.submit_book {
@@ -202,3 +204,41 @@ input.submit_book:hover {
     "Lucida Sans", Arial, sans-serif;
   font-size: 17px;
 }
+
+/* FOOTER END */
+
+
+/* books */
+
+div.book_container {
+display: inline-flex;
+  width: 200px; 
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.books {
+ 
+}
+
+
+
+
+/*div.books {
+  display: flex;
+  
+  margin-top: 50px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+    flex-wrap: wrap;
+    border: white 1px solid;
+    width: 300px;
+    margin-left: 20px;
+   
+}*/
+

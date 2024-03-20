@@ -62,7 +62,7 @@ if(isset($_POST['submit'])){
     $select->Select();
 
     if ($select->loginSuccess) {
-        header("Location: boeken.php");
+        header("Location: books.php");
         exit();
     }
 }

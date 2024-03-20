@@ -30,25 +30,30 @@
 }
 
 $boekenmanager = new Books($conn);
-$books = $boekenmanager->selectallBooks();
+$books = $boekenmanager->Selectallbooks();
 
 foreach ($books as $book) {
-    echo $book['titel'] . "<br>";
-    echo $book['isbn'] . "<br>";
-    echo $book['schrijver'] . "<br>";
-    echo $book['uitgever'] . "<br>";
-    echo $book['boekjaar'] . "<br>";
-    echo $book['informatie_boek'] . "<br>";
-    if (!empty($book['img'])) {
-        echo '<img src="data:image/png;base64,' . base64_encode($book['img']) . '"><br>';
-    } else {
-        echo "No image available<br>";
-    }
-}
-  
-  
+    echo "<div class='book_container'>" .  
+            "<div class='books'>" .  
+               
+                    $book['titel']  .   
+                 "<div>ISBN: "  .   $book['isbn'] . "</div>"  . "<br>" .
+                    $book['schrijver'] . 
+                    $book['uitgever'] . 
+                    $book['boekjaar'];
 
+    if (!empty($book['img'])) {
+        $imagePath = $book['img'];
+        echo '<img src="upload/' . $imagePath . '" width="100" height="100" class="book_image"><br>';
+    }
+
+    echo $book['informatie_boek'];
+
+    echo "</div></div>"; 
+}
 ?>
+
+
 
 
 
