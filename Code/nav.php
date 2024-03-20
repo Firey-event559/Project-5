@@ -24,7 +24,7 @@
             </li>
             
             <li class="searchbar">
-                <input type="search" placeholder="Search..">
+                <input type="search" name="search" id="search" placeholder="Search..">
             </li>
             <li>
                 <a class="nav_pagina_links-inloggen" href="login.php">Inloggen</a>
@@ -38,6 +38,8 @@
         </ul>
     </nav>
 
+
+    <script src="main.js"></script>
 </body>
 
 </html>

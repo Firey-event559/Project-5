@@ -38,9 +38,9 @@ foreach ($books as $book) {
                
                     $book['titel']  .   
                  "<div>ISBN: "  .   $book['isbn'] . "</div>"  . "<br>" .
-                    $book['schrijver'] . 
-                    $book['uitgever'] . 
-                    $book['boekjaar'];
+                    $book['schrijver'] . "<br>" .
+                    $book['uitgever'] .  "<br>" .
+                    $book['boekjaar'] .  "<br>";
 
     if (!empty($book['img'])) {
         $imagePath = $book['img'];
@@ -56,7 +56,7 @@ foreach ($books as $book) {
 
 
 
-
+<script src="main.js"></script>
 
 </body>
 </html>
