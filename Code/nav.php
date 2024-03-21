@@ -17,20 +17,20 @@
 
 
             <li>
-                <a class="nav_pagina_links" href="create.php">Reserveer Een Boek</a>
+                <a class="nav_page_link" href="books_create.php">Reserveer Een Boek</a>
             </li>
             <li>
-                <a class="nav_pagina_links" href="books.php">Boeken</a>
+                <a class="nav_page_link" href="books.php">Boeken</a>
             </li>
-            
+
             <li class="searchbar">
                 <input type="search" name="search" id="search" placeholder="Search..">
             </li>
             <li>
-                <a class="nav_pagina_links-inloggen" href="login.php">Inloggen</a>
+                <a class="nav_page_link-login" href="login.php">Inloggen</a>
             </li>
             <li>
-                <a class="nav_pagina_links-registreren" href="account_register.php">Registeren</a>
+                <a class="nav_page_link-register" href="account_register.php">Registeren</a>
             </li>
 
 

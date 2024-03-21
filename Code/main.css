@@ -43,14 +43,14 @@ nav.Navbar_color ul li {
   width: 50px;
   height: 40px;
 }
-.nav_pagina_links {
+.nav_page_link {
   text-decoration: none;
   color: white;
   font-size: 17px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-.nav_pagina_links-inloggen {
+.nav_page_link-login {
   text-decoration: none;
   display: flex;
   text-align: center;
@@ -61,7 +61,7 @@ nav.Navbar_color ul li {
     "Lucida Sans", Arial, sans-serif;
 }
 
-.nav_pagina_links-registreren {
+.nav_page_link-register {
   text-decoration: none;
   display: flex;
   text-align: center;
@@ -141,13 +141,11 @@ input.create_book_input {
     "Lucida Sans", Arial, sans-serif;
   margin-top: 20px;
 }
-input.create_book_input_img{
+input.create_book_input_img {
   color: white;
-  margin-top:20px ;
-
-
+  margin-top: 20px;
 }
-textarea.create_book_input{
+textarea.create_book_input {
   background-color: black;
   color: white;
   padding: 12px;
@@ -156,7 +154,6 @@ textarea.create_book_input{
     "Lucida Sans", Arial, sans-serif;
   margin-top: 20px;
   height: 175px;
-
 }
 
 input.submit_book {
@@ -167,7 +164,7 @@ input.submit_book {
   color: black;
   border-radius: 50px;
   margin-top: 20px;
-  
+
   width: 20%;
   padding: 12px;
 }
@@ -176,17 +173,19 @@ input.submit_book:hover {
   cursor: pointer;
 }
 
-
 /* FOOTER */
 
 .footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10em;
+  text-align: center;
   background-color: black;
   color: white;
   text-align: center;
 }
+
 .tcrimg {
   width: 65px;
   height: 35px;
@@ -207,12 +206,11 @@ input.submit_book:hover {
 
 /* FOOTER END */
 
-
 /* books */
 
 div.book_container {
-display: inline-flex;
-  width: 200px; 
+  display: inline-flex;
+  width: 200px;
   margin: 10px;
   border: 1px solid #ccc;
   padding: 10px;
@@ -220,8 +218,3 @@ display: inline-flex;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
-
-
-
-
-
